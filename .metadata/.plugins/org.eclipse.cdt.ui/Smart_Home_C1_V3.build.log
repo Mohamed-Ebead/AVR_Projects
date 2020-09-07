@@ -1,0 +1,90 @@
+23:35:28 **** Build of configuration Debug for project Smart_Home_C1_V3 ****
+make all 
+Building file: ../ADC_Interrupt.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"ADC_Interrupt.d" -MT"ADC_Interrupt.o" -c -o "ADC_Interrupt.o" "../ADC_Interrupt.c"
+Finished building: ../ADC_Interrupt.c
+ 
+Building file: ../ADC_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"ADC_Program.d" -MT"ADC_Program.o" -c -o "ADC_Program.o" "../ADC_Program.c"
+Finished building: ../ADC_Program.c
+ 
+Building file: ../App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"App.d" -MT"App.o" -c -o "App.o" "../App.c"
+In file included from ../App.c:11:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../App.c:43: warning: return type of 'main' is not 'int'
+Finished building: ../App.c
+ 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+Finished building: ../DIO_prog.c
+ 
+Building file: ../EXT_INT.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"EXT_INT.d" -MT"EXT_INT.o" -c -o "EXT_INT.o" "../EXT_INT.c"
+In file included from ../EXT_INT.c:11:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT.c
+ 
+Building file: ../EXT_INT_ISR.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"EXT_INT_ISR.d" -MT"EXT_INT_ISR.o" -c -o "EXT_INT_ISR.o" "../EXT_INT_ISR.c"
+In file included from ../EXT_INT_ISR.c:10:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT_ISR.c
+ 
+Building file: ../Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"Program.d" -MT"Program.o" -c -o "Program.o" "../Program.c"
+Finished building: ../Program.c
+ 
+Building file: ../Timer0_PWM_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"Timer0_PWM_Prog.d" -MT"Timer0_PWM_Prog.o" -c -o "Timer0_PWM_Prog.o" "../Timer0_PWM_Prog.c"
+Finished building: ../Timer0_PWM_Prog.c
+ 
+Building file: ../Timer2_PWM_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"Timer2_PWM_Prog.d" -MT"Timer2_PWM_Prog.o" -c -o "Timer2_PWM_Prog.o" "../Timer2_PWM_Prog.c"
+Finished building: ../Timer2_PWM_Prog.c
+ 
+Building file: ../UART_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"UART_prog.d" -MT"UART_prog.o" -c -o "UART_prog.o" "../UART_prog.c"
+Finished building: ../UART_prog.c
+ 
+Building target: Smart_Home_C1_V3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_Home_C1_V3.map -mmcu=atmega32 -o "Smart_Home_C1_V3.elf"  ./ADC_Interrupt.o ./ADC_Program.o ./App.o ./DIO_prog.o ./EXT_INT.o ./EXT_INT_ISR.o ./Program.o ./Timer0_PWM_Prog.o ./Timer2_PWM_Prog.o ./UART_prog.o   
+Finished building target: Smart_Home_C1_V3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_Home_C1_V3.elf  >"Smart_Home_C1_V3.lss"
+Finished building: Smart_Home_C1_V3.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Smart_Home_C1_V3.elf  "Smart_Home_C1_V3.hex"
+Finished building: Smart_Home_C1_V3.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_Home_C1_V3.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9430 bytes (28.8% Full)
+(.text + .data + .bootloader)
+
+Data:         16 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:35:30 Build Finished (took 1s.943ms)
+

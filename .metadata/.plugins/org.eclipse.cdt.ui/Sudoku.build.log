@@ -1,0 +1,9 @@
+19:28:20 **** Build of configuration Debug for project Sudoku ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:/IMT_SDK_Win_64/jre/bin/server;C:/IMT_SDK_Win_64/jre/bin;C:/IMT_SDK_Win_64/jre/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\QT Lite\QTSystem;C:\Program Files\MATLAB\R2016a\runtime\win64;C:\Program Files\MATLAB\R2016a\bin;C:\Program Files\MATLAB\R2016a\polyspace\bin;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files (x86)\EShare\;C:\Program Files (x86)\Cracklock\Bin;C:\Users\Mohamed Ebead\AppData\Local\Microsoft\WindowsApps;C:\IMT_SDK_Win_64]
+
+19:28:20 Build Finished (took 203ms)
+

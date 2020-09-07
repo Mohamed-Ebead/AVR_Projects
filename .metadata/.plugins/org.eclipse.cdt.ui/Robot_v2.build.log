@@ -1,0 +1,40 @@
+22:52:36 **** Incremental Build of configuration Debug for project Robot_v2 ****
+make all 
+Building file: ../LCD_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"LCD_Prog.d" -MT"LCD_Prog.o" -c -o "LCD_Prog.o" "../LCD_Prog.c"
+In file included from ../LCD_Prog.c:10:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD_Prog.c
+ 
+Building target: Robot_v2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Robot_v2.map -mmcu=atmega32 -o "Robot_v2.elf"  ./DIO_prog.o ./EXT_INT0.o ./EXT_INT1.o ./EXT_INT2.o ./EXT_INT_ISR0.o ./EXT_INT_ISR1.o ./EXT_INT_ISR2.o ./LCD_Prog.o ./Program.o ./Timer0_PWM_Prog.o ./Timer2_PWM_Prog.o ./app.o   
+Finished building target: Robot_v2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Robot_v2.elf  >"Robot_v2.lss"
+Finished building: Robot_v2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Robot_v2.elf  "Robot_v2.hex"
+Finished building: Robot_v2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Robot_v2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10028 bytes (30.6% Full)
+(.text + .data + .bootloader)
+
+Data:         56 bytes (2.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:52:37 Build Finished (took 874ms)
+

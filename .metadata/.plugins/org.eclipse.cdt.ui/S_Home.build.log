@@ -1,0 +1,20 @@
+09:13:41 **** Build of configuration Debug for project S_Home ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 S_Home.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11890 bytes (36.3% Full)
+(.text + .data + .bootloader)
+
+Data:         71 bytes (3.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+09:13:44 Build Finished (took 3s.103ms)
+

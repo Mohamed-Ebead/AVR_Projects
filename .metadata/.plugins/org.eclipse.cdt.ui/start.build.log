@@ -1,0 +1,10 @@
+14:44:33 **** Build of configuration Debug for project start ****
+make all 
+Building file: ../src/_initialize_hardware.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=soft -Og -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra  -g3 -DDEBUG -DUSE_FULL_ASSERT -DTRACE -DOS_USE_TRACE_SEMIHOSTING_DEBUG -DSTM32F407xx -DUSE_HAL_DRIVER -DHSE_VALUE=8000000 -std=gnu11 -MMD -MP -MF"src/_initialize_hardware.d" -MT"src/_initialize_hardware.o" -c -o "src/_initialize_hardware.o" "../src/_initialize_hardware.c"
+c:/imt_sdk_win_64/winarm/build tools/2.10-20180103-1919/bin/sh: arm-none-eabi-gcc: not found
+make: *** [src/subdir.mk:29: src/_initialize_hardware.o] Error 127
+
+14:44:33 Build Finished (took 411ms)
+

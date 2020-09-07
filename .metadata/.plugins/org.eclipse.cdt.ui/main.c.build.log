@@ -1,0 +1,9 @@
+09:55:48 **** Build of configuration Debug for project main.c ****
+make all 
+Cannot run program "make": Launching failed
+
+Error: Program "make" not found in PATH
+PATH=[C:\cygwin64\bin;C:/IMT_SDK_Win_64/jre/bin/server;C:/IMT_SDK_Win_64/jre/bin;C:/IMT_SDK_Win_64/jre/lib/amd64;C:\Program Files\Python37\Scripts\;C:\Program Files\Python37\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\QT Lite\QTSystem;C:\Program Files\MATLAB\R2016a\runtime\win64;C:\Program Files\MATLAB\R2016a\bin;C:\Program Files\MATLAB\R2016a\polyspace\bin;C:\Program Files (x86)\STMicroelectronics\STM32 ST-LINK Utility\ST-LINK Utility;C:\Program Files (x86)\EShare\;C:\Program Files\Git\cmd;C:\IMT_SDK_Win_64\mingw;C:\MinGW\bin;;C:\IMT_SDK_Win_64]
+
+09:55:48 Build Finished (took 200ms)
+

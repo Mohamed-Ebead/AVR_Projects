@@ -1,0 +1,38 @@
+11:41:15 **** Incremental Build of configuration Debug for project timer_test ****
+make all 
+Building file: ../Timer1_PWM_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"Timer1_PWM_Prog.d" -MT"Timer1_PWM_Prog.o" -c -o "Timer1_PWM_Prog.o" "../Timer1_PWM_Prog.c"
+Finished building: ../Timer1_PWM_Prog.c
+ 
+Building target: timer_test.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,timer_test.map -mmcu=atmega32 -o "timer_test.elf"  ./Timer1_PWM_Prog.o ./main.o ./program.o   
+Finished building target: timer_test.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S timer_test.elf  >"timer_test.lss"
+Finished building: timer_test.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex timer_test.elf  "timer_test.hex"
+Finished building: timer_test.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 timer_test.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     234 bytes (0.7% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+11:41:16 Build Finished (took 1s.16ms)
+

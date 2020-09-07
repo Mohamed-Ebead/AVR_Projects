@@ -1,0 +1,40 @@
+00:34:36 **** Incremental Build of configuration Debug for project Smart_Home_C2 ****
+make all 
+Building file: ../KEYPAD_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"KEYPAD_Prog.d" -MT"KEYPAD_Prog.o" -c -o "KEYPAD_Prog.o" "../KEYPAD_Prog.c"
+In file included from ../KEYPAD_Prog.c:10:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../KEYPAD_Prog.c
+ 
+Building target: Smart_Home_C2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_Home_C2.map -mmcu=atmega32 -o "Smart_Home_C2.elf"  ./App.o ./DIO_prog.o ./KEYPAD_Prog.o ./LCD_Prog.o ./Program.o ./UART_prog.o   
+Finished building target: Smart_Home_C2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_Home_C2.elf  >"Smart_Home_C2.lss"
+Finished building: Smart_Home_C2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Smart_Home_C2.elf  "Smart_Home_C2.hex"
+Finished building: Smart_Home_C2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_Home_C2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10858 bytes (33.1% Full)
+(.text + .data + .bootloader)
+
+Data:         90 bytes (4.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+00:34:37 Build Finished (took 782ms)
+

@@ -1,0 +1,7 @@
+19:39:37 **** Clean-only build of configuration Debug for project STM32F407xx_Drivers ****
+make clean 
+rm -rf  ./src/main.o  ./Drivers/src/STM32F4xx_GPIO.o  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  STM32F407xx_Drivers.hex  STM32F407xx_Drivers.siz  ./src/main.d  ./Drivers/src/STM32F4xx_GPIO.d  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.d  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  STM32F407xx_Drivers.elf
+ 
+
+19:39:38 Build Finished (took 190ms)
+

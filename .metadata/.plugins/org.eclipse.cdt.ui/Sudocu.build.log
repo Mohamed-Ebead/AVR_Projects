@@ -1,0 +1,10 @@
+19:42:35 **** Build of configuration Debug for project Sudocu ****
+make all 
+Building file: ../main.c
+Invoking: Cross ARM GNU C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m3 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -std=gnu11 -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+c:/imt_sdk_win_64/winarm/build tools/2.10-20180103-1919/bin/sh: arm-none-eabi-gcc: not found
+make: *** [subdir.mk:20: main.o] Error 127
+
+19:42:37 Build Finished (took 1s.630ms)
+

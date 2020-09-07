@@ -1,0 +1,38 @@
+17:34:17 **** Incremental Build of configuration Debug for project Schedular ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+Finished building: ../main.c
+ 
+Building target: Schedular.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Schedular.map -mmcu=atmega32 -o "Schedular.elf"  ./DIO_prog.o ./RTO_Prog.o ./Timer1_prog.o ./main.o ./program.o   
+Finished building target: Schedular.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Schedular.elf  >"Schedular.lss"
+Finished building: Schedular.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Schedular.elf  "Schedular.hex"
+Finished building: Schedular.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Schedular.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    2538 bytes (7.7% Full)
+(.text + .data + .bootloader)
+
+Data:         20 bytes (1.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+17:34:18 Build Finished (took 800ms)
+

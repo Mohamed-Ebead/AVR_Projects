@@ -1,0 +1,52 @@
+18:44:47 **** Incremental Build of configuration Debug for project Smart_Home_C1 ****
+make all 
+Building file: ../App.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1200000UL -MMD -MP -MF"App.d" -MT"App.o" -c -o "App.o" "../App.c"
+In file included from ../App.c:11:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../App.c:33: warning: return type of 'main' is not 'int'
+../App.c: In function 'main':
+../App.c:37: warning: implicit declaration of function 'vid_DIO_vid_SetDioDirections'
+../App.c:39: warning: implicit declaration of function 'vid_ADC_vid_Initialize'
+../App.c:41: warning: implicit declaration of function 'vid_Timer0_vid_InitializePWM'
+../App.c:43: warning: implicit declaration of function 'vid_Timer2_vid_InitializePWM'
+../App.c:45: warning: implicit declaration of function 'vid_ExtInt0_vid_InitializeExtInt'
+../App.c:47: warning: implicit declaration of function 'vid_ExtInt1_vid_InitializeExtInt'
+../App.c:49: warning: implicit declaration of function 'vid_UART_vid_Initialize'
+../App.c:57: warning: implicit declaration of function 'UpdateFanSpeed'
+../App.c:58: warning: implicit declaration of function 'UpdateLightIlluminance'
+../App.c:67: warning: implicit declaration of function 'vid_UART_vid_SendChar'
+Finished building: ../App.c
+ 
+Building target: Smart_Home_C1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_Home_C1.map -mmcu=atmega32 -o "Smart_Home_C1.elf"  ./ADC_Interrupt.o ./ADC_Program.o ./App.o ./DIO_prog.o ./EXT_INT.o ./EXT_INT_ISR.o ./Program.o ./Timer0_PWM_Prog.o ./Timer2_PWM_Prog.o ./UART_prog.o   
+Finished building target: Smart_Home_C1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_Home_C1.elf  >"Smart_Home_C1.lss"
+Finished building: Smart_Home_C1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Smart_Home_C1.elf  "Smart_Home_C1.hex"
+Finished building: Smart_Home_C1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_Home_C1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8500 bytes (25.9% Full)
+(.text + .data + .bootloader)
+
+Data:         14 bytes (0.7% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+18:44:48 Build Finished (took 785ms)
+

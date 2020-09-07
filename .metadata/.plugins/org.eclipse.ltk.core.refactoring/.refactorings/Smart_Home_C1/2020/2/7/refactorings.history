@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;Smart_Home_C1/EXT_INT0_INTERFACE.H&apos; to &apos;EXT_INT_INTERFACE.H&apos;" description="Rename resource &apos;EXT_INT0_INTERFACE.H&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="EXT_INT0_INTERFACE.H" name="EXT_INT_INTERFACE.H" stamp="1581625973635" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Smart_Home_C1/EXT_INT0.c&apos; to &apos;EXT_INT.c&apos;" description="Rename resource &apos;EXT_INT0.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="EXT_INT0.c" name="EXT_INT.c" stamp="1581625979865" updateReferences="true"/>
+</session>

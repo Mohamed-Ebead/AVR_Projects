@@ -1,0 +1,20 @@
+22:13:53 **** Incremental Build of configuration Debug for project Timer1_PWM ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Timer1_PWM.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     260 bytes (0.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:13:53 Build Finished (took 172ms)
+

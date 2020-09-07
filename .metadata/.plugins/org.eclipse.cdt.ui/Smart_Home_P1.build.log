@@ -1,0 +1,40 @@
+23:27:57 **** Incremental Build of configuration Debug for project Smart_Home_P1 ****
+make all 
+Building file: ../EXT_INT0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1200000UL -MMD -MP -MF"EXT_INT0.d" -MT"EXT_INT0.o" -c -o "EXT_INT0.o" "../EXT_INT0.c"
+In file included from ../EXT_INT0.c:11:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT0.c
+ 
+Building target: Smart_Home_P1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_Home_P1.map -mmcu=atmega32 -o "Smart_Home_P1.elf"  ./ADC_Interrupt.o ./ADC_Program.o ./App.o ./DIO_prog.o ./EXT_INT0.o ./Program.o ./Timer0_PWM_Prog.o ./Timer2_PWM_Prog.o   
+Finished building target: Smart_Home_P1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_Home_P1.elf  >"Smart_Home_P1.lss"
+Finished building: Smart_Home_P1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Smart_Home_P1.elf  "Smart_Home_P1.hex"
+Finished building: Smart_Home_P1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_Home_P1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5610 bytes (17.1% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+23:27:58 Build Finished (took 1s.34ms)
+

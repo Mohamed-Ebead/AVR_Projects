@@ -1,0 +1,74 @@
+11:19:34 **** Incremental Build of configuration Debug for project RTOS_1 ****
+make all 
+Building file: ../freeRTOS/croutine.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"freeRTOS/croutine.d" -MT"freeRTOS/croutine.o" -c -o "freeRTOS/croutine.o" "../freeRTOS/croutine.c"
+Finished building: ../freeRTOS/croutine.c
+ 
+Building file: ../freeRTOS/heap_3.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"freeRTOS/heap_3.d" -MT"freeRTOS/heap_3.o" -c -o "freeRTOS/heap_3.o" "../freeRTOS/heap_3.c"
+Finished building: ../freeRTOS/heap_3.c
+ 
+Building file: ../freeRTOS/port.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"freeRTOS/port.d" -MT"freeRTOS/port.o" -c -o "freeRTOS/port.o" "../freeRTOS/port.c"
+Finished building: ../freeRTOS/port.c
+ 
+Building file: ../freeRTOS/queue.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"freeRTOS/queue.d" -MT"freeRTOS/queue.o" -c -o "freeRTOS/queue.o" "../freeRTOS/queue.c"
+Finished building: ../freeRTOS/queue.c
+ 
+Building file: ../freeRTOS/tasks.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"freeRTOS/tasks.d" -MT"freeRTOS/tasks.o" -c -o "freeRTOS/tasks.o" "../freeRTOS/tasks.c"
+../freeRTOS/tasks.c: In function 'xTaskGenericCreate':
+../freeRTOS/tasks.c:470: warning: cast from pointer to integer of different size
+../freeRTOS/tasks.c:470: warning: cast to pointer from integer of different size
+Finished building: ../freeRTOS/tasks.c
+ 
+Building file: ../freeRTOS/timers.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"freeRTOS/timers.d" -MT"freeRTOS/timers.o" -c -o "freeRTOS/timers.o" "../freeRTOS/timers.c"
+Finished building: ../freeRTOS/timers.c
+ 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+../main.c: In function 'main':
+../main.c:26: warning: pointer targets in passing argument 2 of 'xTaskGenericCreate' differ in signedness
+../main.c:27: warning: pointer targets in passing argument 2 of 'xTaskGenericCreate' differ in signedness
+Finished building: ../main.c
+ 
+Building target: RTOS_1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,RTOS_1.map -mmcu=atmega32 -o "RTOS_1.elf"  ./freeRTOS/croutine.o ./freeRTOS/heap_3.o ./freeRTOS/list.o ./freeRTOS/port.o ./freeRTOS/queue.o ./freeRTOS/tasks.o ./freeRTOS/timers.o  ./DIO_prog.o ./main.o ./program.o   
+Finished building target: RTOS_1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S RTOS_1.elf  >"RTOS_1.lss"
+Finished building: RTOS_1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex RTOS_1.elf  "RTOS_1.hex"
+Finished building: RTOS_1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   12106 bytes (36.9% Full)
+(.text + .data + .bootloader)
+
+Data:        172 bytes (8.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+11:19:36 Build Finished (took 2s.50ms)
+

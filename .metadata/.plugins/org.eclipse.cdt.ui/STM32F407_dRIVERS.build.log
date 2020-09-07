@@ -1,0 +1,7 @@
+14:49:46 **** Clean-only build of configuration Debug for project STM32F407_dRIVERS ****
+make clean 
+rm -rf  ./src/main.o  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o  STM32F407_dRIVERS.hex  STM32F407_dRIVERS.siz  ./src/main.d  ./.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.d  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.d  STM32F407_dRIVERS.elf
+ 
+
+14:49:46 Build Finished (took 250ms)
+

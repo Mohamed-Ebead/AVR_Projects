@@ -1,0 +1,38 @@
+22:17:00 **** Incremental Build of configuration Debug for project Smart_Home_C1_V2 ****
+make all 
+Building file: ../ADC_Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=800000UL -MMD -MP -MF"ADC_Program.d" -MT"ADC_Program.o" -c -o "ADC_Program.o" "../ADC_Program.c"
+Finished building: ../ADC_Program.c
+ 
+Building target: Smart_Home_C1_V2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_Home_C1_V2.map -mmcu=atmega32 -o "Smart_Home_C1_V2.elf"  ./ADC_Interrupt.o ./ADC_Program.o ./App.o ./DIO_prog.o ./EXT_INT.o ./EXT_INT_ISR.o ./Program.o ./Timer0_PWM_Prog.o ./Timer2_PWM_Prog.o ./UART_prog.o   
+Finished building target: Smart_Home_C1_V2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_Home_C1_V2.elf  >"Smart_Home_C1_V2.lss"
+Finished building: Smart_Home_C1_V2.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Smart_Home_C1_V2.elf  "Smart_Home_C1_V2.hex"
+Finished building: Smart_Home_C1_V2.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_Home_C1_V2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8648 bytes (26.4% Full)
+(.text + .data + .bootloader)
+
+Data:         12 bytes (0.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:17:01 Build Finished (took 1s.58ms)
+

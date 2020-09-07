@@ -1,0 +1,10 @@
+17:37:44 **** Incremental Build of configuration Debug for project ROBOT ****
+make all 
+Building target: ROBOT.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ROBOT.map -mmcu=atmega32 -o "ROBOT.elf"  ./DIO_prog.o ./EXT_INT.o ./EXT_INT_ISR.o ./Program.o ./Timer0_PWM_Prog.o ./Timer2_PWM_Prog.o   
+c:/imt_sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [ROBOT.elf] Error 1
+
+17:37:44 Build Finished (took 812ms)
+

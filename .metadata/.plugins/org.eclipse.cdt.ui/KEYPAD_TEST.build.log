@@ -1,0 +1,40 @@
+22:05:25 **** Incremental Build of configuration Debug for project KEYPAD_TEST ****
+make all 
+Building file: ../KEYPAD_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=12000000UL -MMD -MP -MF"KEYPAD_Prog.d" -MT"KEYPAD_Prog.o" -c -o "KEYPAD_Prog.o" "../KEYPAD_Prog.c"
+In file included from ../KEYPAD_Prog.c:10:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../KEYPAD_Prog.c
+ 
+Building target: KEYPAD_TEST.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_TEST.map -mmcu=atmega32 -o "KEYPAD_TEST.elf"  ./App.o ./DIO_prog.o ./KEYPAD_Prog.o ./LCD_Prog.o ./Program.o   
+Finished building target: KEYPAD_TEST.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_TEST.elf  >"KEYPAD_TEST.lss"
+Finished building: KEYPAD_TEST.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex KEYPAD_TEST.elf  "KEYPAD_TEST.hex"
+Finished building: KEYPAD_TEST.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_TEST.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8548 bytes (26.1% Full)
+(.text + .data + .bootloader)
+
+Data:         38 bytes (1.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:05:26 Build Finished (took 813ms)
+

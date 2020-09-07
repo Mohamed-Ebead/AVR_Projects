@@ -1,0 +1,40 @@
+16:15:29 **** Incremental Build of configuration Debug for project RTOS_0 ****
+make all 
+Building file: ../main.c
+Invoking: AVR Compiler
+avr-gcc -I"E:\IMT\Interfacing\RTOS_0\FreeRTOS\Source\include" -I"E:\IMT\Interfacing\RTOS_0\config" -I"E:\IMT\Interfacing\RTOS_0\FreeRTOS\Source\portable\GCC\ATMega323" -I"E:\IMT\Interfacing\RTOS_0\FreeRTOS\Source\portable\MemMang" -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"main.d" -MT"main.o" -c -o "main.o" "../main.c"
+In file included from ../main.c:8:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../main.c
+ 
+Building target: RTOS_0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,RTOS_0.map -mmcu=atmega32 -o "RTOS_0.elf"  ./FreeRTOS/Source/portable/MemMang/heap_3.o  ./FreeRTOS/Source/portable/GCC/ATMega323/port.o  ./FreeRTOS/Source/croutine.o ./FreeRTOS/Source/event_groups.o ./FreeRTOS/Source/list.o ./FreeRTOS/Source/queue.o ./FreeRTOS/Source/tasks.o ./FreeRTOS/Source/timers.o  ./DIO_prog.o ./main.o ./program.o   
+Finished building target: RTOS_0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S RTOS_0.elf  >"RTOS_0.lss"
+Finished building: RTOS_0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex RTOS_0.elf  "RTOS_0.hex"
+Finished building: RTOS_0.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 RTOS_0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   22104 bytes (67.5% Full)
+(.text + .data + .bootloader)
+
+Data:        202 bytes (9.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+16:15:30 Build Finished (took 1s.143ms)
+

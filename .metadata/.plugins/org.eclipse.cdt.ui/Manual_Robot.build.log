@@ -1,0 +1,121 @@
+21:12:31 **** Incremental Build of configuration Debug for project Manual_Robot ****
+make all 
+Building file: ../DIO_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"DIO_prog.d" -MT"DIO_prog.o" -c -o "DIO_prog.o" "../DIO_prog.c"
+Finished building: ../DIO_prog.c
+ 
+Building file: ../EXT_INT0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXT_INT0.d" -MT"EXT_INT0.o" -c -o "EXT_INT0.o" "../EXT_INT0.c"
+In file included from ../EXT_INT0.c:11:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT0.c
+ 
+Building file: ../EXT_INT1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXT_INT1.d" -MT"EXT_INT1.o" -c -o "EXT_INT1.o" "../EXT_INT1.c"
+In file included from ../EXT_INT1.c:11:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT1.c
+ 
+Building file: ../EXT_INT2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXT_INT2.d" -MT"EXT_INT2.o" -c -o "EXT_INT2.o" "../EXT_INT2.c"
+In file included from ../EXT_INT2.c:11:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT2.c
+ 
+Building file: ../EXT_INT_ISR0.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXT_INT_ISR0.d" -MT"EXT_INT_ISR0.o" -c -o "EXT_INT_ISR0.o" "../EXT_INT_ISR0.c"
+In file included from ../EXT_INT_ISR0.c:10:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT_ISR0.c
+ 
+Building file: ../EXT_INT_ISR1.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXT_INT_ISR1.d" -MT"EXT_INT_ISR1.o" -c -o "EXT_INT_ISR1.o" "../EXT_INT_ISR1.c"
+In file included from ../EXT_INT_ISR1.c:10:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT_ISR1.c
+ 
+Building file: ../EXT_INT_ISR2.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"EXT_INT_ISR2.d" -MT"EXT_INT_ISR2.o" -c -o "EXT_INT_ISR2.o" "../EXT_INT_ISR2.c"
+In file included from ../EXT_INT_ISR2.c:10:
+c:/imt_sdk_win_64/winavr/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../EXT_INT_ISR2.c
+ 
+Building file: ../Program.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Program.d" -MT"Program.o" -c -o "Program.o" "../Program.c"
+Finished building: ../Program.c
+ 
+Building file: ../Timer0_PWM_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Timer0_PWM_Prog.d" -MT"Timer0_PWM_Prog.o" -c -o "Timer0_PWM_Prog.o" "../Timer0_PWM_Prog.c"
+Finished building: ../Timer0_PWM_Prog.c
+ 
+Building file: ../Timer2_PWM_Prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"Timer2_PWM_Prog.d" -MT"Timer2_PWM_Prog.o" -c -o "Timer2_PWM_Prog.o" "../Timer2_PWM_Prog.c"
+Finished building: ../Timer2_PWM_Prog.c
+ 
+Building file: ../UART_prog.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"UART_prog.d" -MT"UART_prog.o" -c -o "UART_prog.o" "../UART_prog.c"
+Finished building: ../UART_prog.c
+ 
+Building file: ../app.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=8000000UL -MMD -MP -MF"app.d" -MT"app.o" -c -o "app.o" "../app.c"
+../app.c:10: warning: return type of 'main' is not 'int'
+../app.c: In function 'main':
+../app.c:14: warning: implicit declaration of function 'vid_DIO_vid_SetDioDirections'
+../app.c:15: warning: implicit declaration of function 'vid_Timer0_vid_InitializePWM'
+../app.c:16: warning: implicit declaration of function 'vid_Timer2_vid_InitializePWM'
+../app.c:21: warning: implicit declaration of function 'vid_UART_vid_Initialize'
+../app.c:24: warning: implicit declaration of function 'vid_DIO_vid_RobotStop'
+../app.c:30: warning: implicit declaration of function 'u8_UART_u8_GetChar'
+../app.c:33: warning: implicit declaration of function 'vid_DIO_vid_RobotForward'
+../app.c:38: warning: implicit declaration of function 'vid_DIO_vid_RobotBackward'
+../app.c:42: warning: implicit declaration of function 'vid_DIO_vid_RobotRight'
+../app.c:46: warning: implicit declaration of function 'vid_DIO_vid_RobotLeft'
+../app.c:54: warning: implicit declaration of function 'vid_DIO_vid_RobotForwardLeft'
+../app.c:58: warning: implicit declaration of function 'vid_DIO_vid_RobotForwardRight'
+../app.c:62: warning: implicit declaration of function 'vid_DIO_vid_RobotBackwardLeft'
+../app.c:66: warning: implicit declaration of function 'vid_DIO_vid_RobotBackwardRight'
+Finished building: ../app.c
+ 
+Building target: Manual_Robot.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Manual_Robot.map -mmcu=atmega32 -o "Manual_Robot.elf"  ./DIO_prog.o ./EXT_INT0.o ./EXT_INT1.o ./EXT_INT2.o ./EXT_INT_ISR0.o ./EXT_INT_ISR1.o ./EXT_INT_ISR2.o ./Program.o ./Timer0_PWM_Prog.o ./Timer2_PWM_Prog.o ./UART_prog.o ./app.o   
+Finished building target: Manual_Robot.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Manual_Robot.elf  >"Manual_Robot.lss"
+Finished building: Manual_Robot.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex Manual_Robot.elf  "Manual_Robot.hex"
+Finished building: Manual_Robot.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Manual_Robot.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3224 bytes (9.8% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:12:33 Build Finished (took 2s.341ms)
+
